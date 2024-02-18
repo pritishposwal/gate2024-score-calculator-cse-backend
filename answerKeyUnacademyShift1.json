@@ -1,0 +1,327 @@
+[
+    {
+      "questionId": "6420084906",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084905",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084902",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084901",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084904",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084899",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084898",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084903",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084907",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084900",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084925",
+      "type": "MSQ",
+      "correctAnswer": ["a","c"]
+    },
+    {
+      "questionId": "6420084919",
+      "type": "MSQ",
+      "correctAnswer": ["a","c"]
+    },
+    {
+      "questionId": "6420084914",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084908",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084931",
+      "type": "NAT",
+      "correctAnswer": "16"
+    },
+    {
+      "questionId": "6420084924",
+      "type": "MSQ",
+      "correctAnswer": ["b","d"]
+    },
+    {
+      "questionId": "6420084928",
+      "type": "MSQ",
+      "correctAnswer": ["a","c"]
+    },
+    {
+      "questionId": "6420084927",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084930",
+      "type": "NAT",
+      "correctAnswer": "6"
+    },
+    {
+      "questionId": "6420084909",
+      "type": "MCQ",
+      "correctAnswer": ["b"]
+    },
+    {
+      "questionId": "6420084910",
+      "type": "MCQ",
+      "correctAnswer": ["b"]
+    },
+    {
+      "questionId": "6420084916",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084929",
+      "type": "NAT",
+      "correctAnswer": "2"
+    },
+    {
+      "questionId": "6420084922",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084918",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084923",
+      "type": "MSQ",
+      "correctAnswer": ["a","d"]
+    },
+    {
+      "questionId": "6420084915",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084911",
+      "type": "MCQ",
+      "correctAnswer": ["b"]
+    },
+    {
+      "questionId": "6420084926",
+      "type": "MSQ",
+      "correctAnswer": ["a","d"]
+    },
+    {
+      "questionId": "6420084932",
+      "type": "NAT",
+      "correctAnswer": "2"
+    },
+    {
+      "questionId": "6420084913",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084912",
+      "type": "MCQ",
+      "correctAnswer": ["c"]
+    },
+    {
+      "questionId": "6420084920",
+      "type": "MSQ",
+      "correctAnswer": ["c","d"]
+    },
+    {
+      "questionId": "6420084921",
+      "type": "MSQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084917",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084933",
+      "type": "MCQ",
+      "correctAnswer": ["b"]
+    },
+    {
+      "questionId": "6420084943",
+      "type": "MSQ",
+      "correctAnswer": ["b","c","d"]
+    },
+    {
+      "questionId": "6420084950",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084947",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084954",
+      "type": "NAT",
+      "correctAnswer": "14"
+    },
+    {
+      "questionId": "6420084938",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084935",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084962",
+      "type": "NAT",
+      "correctAnswer": "6"
+    },
+    {
+      "questionId": "6420084940",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084944",
+      "type": "MSQ",
+      "correctAnswer": ["a","b"]
+    },
+    {
+      "questionId": "6420084955",
+      "type": "NAT",
+      "correctAnswer": "40"
+    },
+    {
+      "questionId": "6420084939",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084951",
+      "type": "NAT",
+      "correctAnswer": "4096"
+    },
+    {
+      "questionId": "6420084949",
+      "type": "MSQ",
+      "correctAnswer": ["b","d"]
+    },
+    {
+      "questionId": "6420084958",
+      "type": "NAT",
+      "correctAnswer": "44"
+    },
+    {
+      "questionId": "6420084946",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084952",
+      "type": "NAT",
+      "correctAnswer": "3"
+    },
+    {
+      "questionId": "6420084941",
+      "type": "MSQ",
+      "correctAnswer": ["b","c","d"]
+    },
+    {
+      "questionId": "6420084956",
+      "type": "NAT",
+      "correctAnswer": "179"
+    },
+    {
+      "questionId": "6420084942",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    },
+    {
+      "questionId": "6420084959",
+      "type": "NAT",
+      "correctAnswer": "6596"
+    },
+    {
+      "questionId": "6420084953",
+      "type": "NAT",
+      "correctAnswer": "2.6"
+    },
+    {
+      "questionId": "6420084961",
+      "type": "NAT",
+      "correctAnswer": "4"
+    },
+    {
+      "questionId": "6420084934",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084936",
+      "type": "MCQ",
+      "correctAnswer": ["d"]
+    },
+    {
+      "questionId": "6420084937",
+      "type": "MCQ",
+      "correctAnswer": ["a"]
+    },
+    {
+      "questionId": "6420084957",
+      "type": "NAT",
+      "correctAnswer": "60"
+    },
+    {
+      "questionId": "6420084945",
+      "type": "MSQ",
+      "correctAnswer": ["b","d"]
+    },
+    {
+      "questionId": "6420084960",
+      "type": "NAT",
+      "correctAnswer": "0.375"
+    },
+    {
+      "questionId": "6420084948",
+      "type": "MSQ",
+      "correctAnswer": ["b","c"]
+    }
+]

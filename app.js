@@ -11,21 +11,33 @@ app.use(cors());
 
 // Placeholder for loading the answer key synchronously at application start
 let answerKey = []; // Make sure to replace this with actual loading logic
-fs.readFile('answerKeyUnacademy.json', 'utf8', (err, data) => {
-    if (err) {
-        console.error("Failed to load answer key:", err);
-        return;
-    }
-    answerKey = JSON.parse(data);
-});
 
-function calculateScore(questionsData) {
+function calculateScore(questionsData,examType) {
+    if (examType === "Shift1CSE"){
+        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademyShift1.json', 'utf8'));
+    }
+    else if (examType === "Shift2CSE"){
+        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademy.json', 'utf8'));
+    }
+    else if (examType === "DA"){
+        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademyDA.json', 'utf8'));
+    }
     let aptitudeScore = { positive: 0, negative: 0, attempted: 0, correct: 0, incorrect: 0, total: 0 };
     let coreScore = { positive: 0, negative: 0, attempted: 0, correct: 0, incorrect: 0, total: 0 };
     let detailedResults = [];
-    // Define aptitude question ID ranges for 1 and 2 mark questions
-    const aptitudeOneMarkIDs = ["6420084963", "6420084964", "6420084965", "6420084966", "6420084967"];
-    const aptitudeTwoMarkIDs = ["6420084968", "6420084969", "6420084970", "6420084971", "6420084972"];
+    // Define aptitude question ID ranges for 1 and 2 mark questions depending on the exam type
+    if (examType === "Shift1CSE"){
+        aptitudeOneMarkIDs = ["6420084898", "6420084899", "6420084900", "6420084901", "6420084902"];
+        aptitudeTwoMarkIDs = ["6420084903", "6420084904", "6420084905", "6420084906", "6420084907"];
+    }
+    else if (examType === "Shift2CSE"){
+        aptitudeOneMarkIDs = ["6420084963", "6420084964", "6420084965", "6420084966", "6420084967"];
+        aptitudeTwoMarkIDs = ["6420084968", "6420084969", "6420084970", "6420084971", "6420084972"];
+    }
+    else if (examType === "DA"){
+        aptitudeOneMarkIDs = ["6420085093", "6420085094", "6420085095", "6420085096", "6420085097"];
+        aptitudeTwoMarkIDs = ["6420085098", "6420085099", "6420085100", "6420085101", "6420085102"];
+    }
 
     questionsData.forEach((question,index)=> {
         const key = answerKey.find(k => k.questionId === question.questionId);
@@ -187,10 +199,10 @@ app.listen(port, () => {
 
 
 app.post('/calculate', async (req, res) => {
-    const { sheetUrl } = req.body; // Assuming the URL is sent in the request body
+    const { sheetUrl, examType } = req.body; // Assuming the URL is sent in the request body
     
     try {
-        const response = await axios.get(sheetUrl, {timeout: 10000}); // Fetch the response sheet
+        const response = await axios.get(sheetUrl, {timeout: 20000}); // Fetch the response sheet
         const htmlContent = response.data;
         const $ = cheerio.load(htmlContent); // Load the HTML content into Cheerio
         //write the html content to a notepad file please not html but ensure we output only first 2048 characters
@@ -260,7 +272,7 @@ app.post('/calculate', async (req, res) => {
         });
         // Now you have the extracted question details in `questionsData`
         // You can use this data to calculate the score
-        const score = calculateScore(questionsData);
+        const score = calculateScore(questionsData,examType);
         // Send back the calculated score
         res.json(score);
     } catch (error) {
