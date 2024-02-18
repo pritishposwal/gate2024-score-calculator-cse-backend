@@ -10,27 +10,25 @@ const cors = require('cors');
 app.use(cors());
 
 // Placeholder for loading the answer key synchronously at application start
-let answerKey = []; // Make sure to replace this with actual loading logic
-
+// Preload answer keys
+let answerKeys = {
+    CSE1: JSON.parse(fs.readFileSync('answerKeyShift1.json', 'utf8')),
+    CSE2: JSON.parse(fs.readFileSync('answerKeyShift2.json', 'utf8')),
+    DA: JSON.parse(fs.readFileSync('answerKeyDA.json', 'utf8'))
+};
 function calculateScore(questionsData,examType) {
-    if (examType === "Shift1CSE"){
-        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademyShift1.json', 'utf8'));
-    }
-    else if (examType === "Shift2CSE"){
-        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademy.json', 'utf8'));
-    }
-    else if (examType === "DA"){
-        answerKey = JSON.parse(fs.readFileSync('answerKeyUnacademyDA.json', 'utf8'));
-    }
+    let answerKey = answerKeys[examType];
     let aptitudeScore = { positive: 0, negative: 0, attempted: 0, correct: 0, incorrect: 0, total: 0 };
     let coreScore = { positive: 0, negative: 0, attempted: 0, correct: 0, incorrect: 0, total: 0 };
     let detailedResults = [];
+    aptitudeOneMarkIDs = [];
+    aptitudeTwoMarkIDs = []
     // Define aptitude question ID ranges for 1 and 2 mark questions depending on the exam type
-    if (examType === "Shift1CSE"){
+    if (examType === "CSE1"){
         aptitudeOneMarkIDs = ["6420084898", "6420084899", "6420084900", "6420084901", "6420084902"];
         aptitudeTwoMarkIDs = ["6420084903", "6420084904", "6420084905", "6420084906", "6420084907"];
     }
-    else if (examType === "Shift2CSE"){
+    else if (examType === "CSE2"){
         aptitudeOneMarkIDs = ["6420084963", "6420084964", "6420084965", "6420084966", "6420084967"];
         aptitudeTwoMarkIDs = ["6420084968", "6420084969", "6420084970", "6420084971", "6420084972"];
     }
@@ -38,9 +36,10 @@ function calculateScore(questionsData,examType) {
         aptitudeOneMarkIDs = ["6420085093", "6420085094", "6420085095", "6420085096", "6420085097"];
         aptitudeTwoMarkIDs = ["6420085098", "6420085099", "6420085100", "6420085101", "6420085102"];
     }
-
+    //console.log(answerKey);
     questionsData.forEach((question,index)=> {
-        const key = answerKey.find(k => k.questionId === question.questionId);
+        const key = answerKey.find(key => key.questionId === question.questionId);
+        //console.log(key,question.questionId);
         let statusque = "Unattempted";
         let marksObtained = 0;
         let questionNo = index + 1;
@@ -61,10 +60,10 @@ function calculateScore(questionsData,examType) {
         //score for the core subject is as per the following logic that first 25 questions are 1 mark and the rest are 2 marks
         let negativeMark = 0
         if(scoreValue === 1){
-            negativeMark = 0.33;
+            negativeMark = 0.33333;
         }
         else{
-            negativeMark = 0.67;
+            negativeMark = 0.66666;
         }
         let negativescorereturn = -1*negativeMark;
         let correct = false; // Flag to indicate if the answer was correct
@@ -147,6 +146,16 @@ function calculateScore(questionsData,examType) {
     // Combine scores for the final result
     let combinedScore = combineScores(aptitudeScore, coreScore);
     // Return structured score results as json
+    //round of the scores to 2 decimal places for each section
+    aptitudeScore.positive = aptitudeScore.positive.toFixed(2);
+    aptitudeScore.negative = aptitudeScore.negative.toFixed(2);
+    aptitudeScore.total = aptitudeScore.total.toFixed(2);
+    coreScore.positive = coreScore.positive.toFixed(2);
+    coreScore.negative = coreScore.negative.toFixed(2);
+    coreScore.total = coreScore.total.toFixed(2);
+    combinedScore.positive = combinedScore.positive.toFixed(2);
+    combinedScore.negative = combinedScore.negative.toFixed(2);
+    combinedScore.total = combinedScore.total.toFixed(2);
     return { aptitudeScore, coreScore, combinedScore , detailedResults};
 }
 
@@ -199,8 +208,8 @@ app.listen(port, () => {
 
 
 app.post('/calculate', async (req, res) => {
-    const { sheetUrl, examType } = req.body; // Assuming the URL is sent in the request body
-    
+    const { sheetUrl, examType } = req.body;
+    let examTypestore = examType;
     try {
         const response = await axios.get(sheetUrl, {timeout: 20000}); // Fetch the response sheet
         const htmlContent = response.data;
@@ -272,7 +281,7 @@ app.post('/calculate', async (req, res) => {
         });
         // Now you have the extracted question details in `questionsData`
         // You can use this data to calculate the score
-        const score = calculateScore(questionsData,examType);
+        const score = calculateScore(questionsData,examTypestore);
         // Send back the calculated score
         res.json(score);
     } catch (error) {
