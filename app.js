@@ -118,17 +118,30 @@ function calculateScore(questionsData,examType) {
                 detailedResults.push({ questionNo, statusque, marksObtained });
                 return;
             }
-            else if (parseFloat(question.givenAnswer).toFixed(2) === parseFloat(key.correctAnswer).toFixed(2)) {
-                //console.log(question.givenAnswer, key.correctAnswer);
-                correct = true;
-                statusque = "Correct";
-                marksObtained = scoreValue;
-                detailedResults.push({ questionNo, statusque, marksObtained });
-            }
-            else {
-                statusque = "Incorrect";
-                marksObtained = 0;
-                detailedResults.push({ questionNo, statusque, marksObtained });
+            else{
+                const givenAnswer = parseFloat(question.givenAnswer).toFixed(2);
+                let correctAnswer = key.correctAnswer;
+                let isCorrect = false;
+                // Handle range-based answers
+                if (Array.isArray(correctAnswer)) {
+                    const [min, max] = correctAnswer.map(value => parseFloat(value).toFixed(2));
+                    isCorrect = givenAnswer >= min && givenAnswer <= max;
+                } else {
+                    // Handle single-value answers
+                    correctAnswer = parseFloat(correctAnswer).toFixed(2);
+                    isCorrect = givenAnswer === correctAnswer;
+                }
+                if (isCorrect) {
+                    correct = true;
+                    statusque = "Correct";
+                    marksObtained = scoreValue;
+                    detailedResults.push({ questionNo, statusque, marksObtained });
+                } else {
+                    statusque = "Incorrect";
+                    // Ensure to use the correct negative marking based on the question score value
+                    marksObtained = 0;
+                    detailedResults.push({ questionNo, statusque, marksObtained });
+                }
             }
         }
 

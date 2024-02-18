@@ -87,7 +87,7 @@
     {
       "questionId": "6420084927",
       "type": "MSQ",
-      "correctAnswer": ["b","c"]
+      "correctAnswer": ["a","c"]
     },
     {
       "questionId": "6420084930",
@@ -252,7 +252,7 @@
     {
       "questionId": "6420084946",
       "type": "MSQ",
-      "correctAnswer": ["b","c"]
+      "correctAnswer": ["a"]
     },
     {
       "questionId": "6420084952",
@@ -272,7 +272,7 @@
     {
       "questionId": "6420084942",
       "type": "MSQ",
-      "correctAnswer": ["b","c"]
+      "correctAnswer": ["c"]
     },
     {
       "questionId": "6420084959",
@@ -282,7 +282,7 @@
     {
       "questionId": "6420084953",
       "type": "NAT",
-      "correctAnswer": "2.6"
+      "correctAnswer": "3.0"
     },
     {
       "questionId": "6420084961",

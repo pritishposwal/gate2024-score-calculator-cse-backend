@@ -67,7 +67,7 @@
   {
     "questionId": "6420084979",
     "type": "MCQ",
-    "correctAnswer": ["a"]
+    "correctAnswer": ["b"]
   },
   {
     "questionId": "6420084985",
@@ -132,7 +132,7 @@
   {
     "questionId": "6420084987",
     "type": "MSQ",
-    "correctAnswer": ["a","b","d"]
+    "correctAnswer": ["a","b"]
   },
   {
     "questionId": "6420084983",
@@ -177,7 +177,7 @@
   {
     "questionId": "6420085015",
     "type": "NAT",
-    "correctAnswer": "30"
+    "correctAnswer": [29.5,30.5]
   },
   {
     "questionId": "6420085007",
@@ -227,7 +227,7 @@
   {
     "questionId": "6420085020",
     "type": "NAT",
-    "correctAnswer": "3"
+    "correctAnswer": [2.9,3.1]
   },
   {
     "questionId": "6420085027",
@@ -277,7 +277,7 @@
   {
     "questionId": "6420085004",
     "type": "MCQ",
-    "correctAnswer": ["c"]
+    "correctAnswer": ["b"]
   },
   {
     "questionId": "6420085018",
@@ -292,17 +292,17 @@
   {
     "questionId": "6420085006",
     "type": "MCQ",
-    "correctAnswer": ["c"]
+    "correctAnswer": ["d"]
   },
   {
     "questionId": "6420085022",
     "type": "NAT",
-    "correctAnswer": "3"
+    "correctAnswer": "2"
   },
   {
     "questionId": "6420085013",
     "type": "MSQ",
-    "correctAnswer": ["a","c"]
+    "correctAnswer": ["d"]
   },
   {
     "questionId": "6420085014",
