@@ -2,7 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const app = express();
-const port = 3000;
+// Process.env.PORT is set by Heroku
+const port = process.env.PORT || 3000;
 app.use(express.json());
 const fs = require('fs');
 const cors = require('cors');
@@ -181,7 +182,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+    console.log(`Listening on port ${port}`);
 });
 
 
