@@ -1,0 +1,145 @@
+.App {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* Remove min-height if it's conflicting with the Box component's style */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 100px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.input-link{
+  overflow-x: auto;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 2rem; /* Adjust or remove padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  /* Remove min-height to allow natural flow */
+}
+
+h1 {
+  margin-top: 50px; /* Adjust this value as needed to create space at the top of the page */
+}
+
+.form-group {
+  width: 100%;
+  max-width: 500px; /* Set a max-width for larger screens */
+  margin: 1rem auto;
+}
+
+.form-control {
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #003d82;
+}
+.table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+  background-color: #0056b3;
+  color: white;
+  padding: 0.75rem;
+}
+
+.table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* Footer styles */
+.footer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    width: 70%;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    width: 90%;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icon {
+    margin: 0.5rem 0;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,601 @@
+[
+  {
+    "questionId": "6420084967",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "D"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084965",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084972",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084964",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "B"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084968",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "d"
+    ]
+  },
+  {
+    "questionId": "6420084969",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "D"
+    ],
+    "optionImageIds": [
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420084970",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "D"
+    ],
+    "optionImageIds": [
+      "d"
+    ]
+  },
+  {
+    "questionId": "6420084971",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084966",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420084963",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420084992",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "D"
+    ],
+    "optionImageIds": [
+      "c",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084973",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420084974",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084979",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420084985",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "B",
+      "D"
+    ],
+    "optionImageIds": [
+      "a",
+      "d"
+    ]
+  },
+  {
+    "questionId": "6420084986",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B",
+      "D"
+    ],
+    "optionImageIds": [
+      "a",
+      "c",
+      "d"
+    ]
+  },
+  {
+    "questionId": "6420084990",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "D"
+    ],
+    "optionImageIds": [
+      "d",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084996",
+    "questionType": "NAT",
+    "givenAnswer": "7"
+  },
+  {
+    "questionId": "6420084994",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "C",
+      "D"
+    ],
+    "optionImageIds": [
+      "c",
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084984",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084978",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084975",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084988",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "D"
+    ],
+    "optionImageIds": [
+      "d",
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084981",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "D"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420084997",
+    "questionType": "NAT",
+    "givenAnswer": "3"
+  },
+  {
+    "questionId": "6420084989",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "B",
+      "C",
+      "D"
+    ],
+    "optionImageIds": [
+      "d",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084987",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "B",
+      "C",
+      "D"
+    ],
+    "optionImageIds": [
+      "d",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084983",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420084991",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B"
+    ],
+    "optionImageIds": [
+      "c",
+      "d"
+    ]
+  },
+  {
+    "questionId": "6420084982",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420084976",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420084993",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "B",
+      "D"
+    ],
+    "optionImageIds": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084995",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B"
+    ],
+    "optionImageIds": [
+      "d",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084980",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "B"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084977",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "D"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420085015",
+    "questionType": "NAT",
+    "givenAnswer": ""
+  },
+  {
+    "questionId": "6420085007",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085024",
+    "questionType": "NAT",
+    "givenAnswer": "2"
+  },
+  {
+    "questionId": "6420085001",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085011",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B",
+      "C"
+    ],
+    "optionImageIds": [
+      "b",
+      "d",
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420085025",
+    "questionType": "NAT",
+    "givenAnswer": "6"
+  },
+  {
+    "questionId": "6420085012",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085026",
+    "questionType": "NAT",
+    "givenAnswer": ""
+  },
+  {
+    "questionId": "6420085000",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420085021",
+    "questionType": "NAT",
+    "givenAnswer": "9"
+  },
+  {
+    "questionId": "6420085020",
+    "questionType": "NAT",
+    "givenAnswer": ""
+  },
+  {
+    "questionId": "6420085027",
+    "questionType": "NAT",
+    "givenAnswer": ""
+  },
+  {
+    "questionId": "6420085008",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "D"
+    ],
+    "optionImageIds": [
+      "c",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420085019",
+    "questionType": "NAT",
+    "givenAnswer": "128"
+  },
+  {
+    "questionId": "6420085002",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085003",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420085010",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B",
+      "C"
+    ],
+    "optionImageIds": [
+      "d",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420084998",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420085017",
+    "questionType": "NAT",
+    "givenAnswer": "250"
+  },
+  {
+    "questionId": "6420084999",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085004",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "C"
+    ],
+    "optionImageIds": [
+      "b"
+    ]
+  },
+  {
+    "questionId": "6420085018",
+    "questionType": "NAT",
+    "givenAnswer": "50"
+  },
+  {
+    "questionId": "6420085023",
+    "questionType": "NAT",
+    "givenAnswer": ""
+  },
+  {
+    "questionId": "6420085006",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "A"
+    ],
+    "optionImageIds": [
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420085022",
+    "questionType": "NAT",
+    "givenAnswer": "3"
+  },
+  {
+    "questionId": "6420085013",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "B",
+      "D"
+    ],
+    "optionImageIds": [
+      "a",
+      "c"
+    ]
+  },
+  {
+    "questionId": "6420085014",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "B"
+    ],
+    "optionImageIds": [
+      "c",
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420085005",
+    "questionType": "MCQ",
+    "chosenOptions": [
+      "--"
+    ],
+    "optionImageIds": []
+  },
+  {
+    "questionId": "6420085009",
+    "questionType": "MSQ",
+    "chosenOptions": [
+      "A",
+      "D"
+    ],
+    "optionImageIds": [
+      "b",
+      "a"
+    ]
+  },
+  {
+    "questionId": "6420085016",
+    "questionType": "NAT",
+    "givenAnswer": "36"
+  }
+]
