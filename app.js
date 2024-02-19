@@ -36,14 +36,11 @@ function calculateScore(questionsData,examType) {
         aptitudeOneMarkIDs = ["6420085093", "6420085094", "6420085095", "6420085096", "6420085097"];
         aptitudeTwoMarkIDs = ["6420085098", "6420085099", "6420085100", "6420085101", "6420085102"];
     }
-    //console.log(answerKey);
     questionsData.forEach((question,index)=> {
         const key = answerKey.find(key => key.questionId === question.questionId);
-        //console.log(key,question.questionId);
         let statusque = "Unattempted";
         let marksObtained = 0;
         let questionNo = index + 1;
-        //console.log(key);
         if (!key) {
             console.error("Answer key not found for question ID:", question.questionId);
             return;
@@ -77,7 +74,6 @@ function calculateScore(questionsData,examType) {
                 return;
             }
             else if (key.correctAnswer.includes(question.optionImageIds[0])) {
-                //console.log(key.correctAnswer, question.optionImageIds[0]);
                 correct = true;
                 statusque = "Correct";
                 marksObtained = scoreValue;
@@ -89,8 +85,6 @@ function calculateScore(questionsData,examType) {
                 detailedResults.push({ questionNo, statusque, marksObtained });
             }
         } else if (question.questionType === "MSQ") {
-            //print the correct option id from the answer key from the given question id
-            //console.log(answerKey[question.questionId]);
             //check if our response is empty then do nothing and add it to unattempted
             if (question.optionImageIds.length === 0) {
                 statusque = "Unattempted";
@@ -110,7 +104,6 @@ function calculateScore(questionsData,examType) {
                 detailedResults.push({ questionNo, statusque, marksObtained });
             }
         } else if (question.questionType === "NAT") {
-            //console.log(question.givenAnswer, key.correctAnswer);
             //check if our response is empty then do nothing and add it to unattempted
             if (question.givenAnswer === "") {
                 statusque = "Unattempted";
@@ -138,7 +131,6 @@ function calculateScore(questionsData,examType) {
                     detailedResults.push({ questionNo, statusque, marksObtained });
                 } else {
                     statusque = "Incorrect";
-                    // Ensure to use the correct negative marking based on the question score value
                     marksObtained = 0;
                     detailedResults.push({ questionNo, statusque, marksObtained });
                 }
@@ -153,7 +145,6 @@ function calculateScore(questionsData,examType) {
         else {
             updateScore(scoreSection, scoreValue, negativeMark, correct, true);
         }
-        //detailedResults.push({ questionNo, statusque, marksObtained });
     });
 
     // Combine scores for the final result
@@ -227,16 +218,7 @@ app.post('/calculate', async (req, res) => {
         const response = await axios.get(sheetUrl, {timeout: 20000}); // Fetch the response sheet
         const htmlContent = response.data;
         const $ = cheerio.load(htmlContent); // Load the HTML content into Cheerio
-        //write the html content to a notepad file please not html but ensure we output only first 2048 characters
         const fs = require('fs');
-        //trim the html content to 1000 words
-        //write the trimmed content to a notepad file
-        fs.writeFile('gate2024.txt', htmlContent, (err) => {
-            if (err) throw err;
-            //console.log('The file has been saved!');
-        });
-        // Now you can use Cheerio to parse the HTML content
-        // For example, let's say each question is within an element with class 'question'
         let questionsData = [];
 
         $('.question-pnl').each((i, elem) => {
@@ -280,17 +262,6 @@ app.post('/calculate', async (req, res) => {
                     questionsData.push({ questionId, questionType, givenAnswer });
                 }
             }
-        });
-        //write the questionsData to a json
-        //first empty the file
-        fs.writeFile('gate2024.json', '', (err) => {
-            if (err) throw err;
-            //console.log('The file has been saved!');
-        });
-        //the json saved should be well formatted with indent 2 so it looks good
-        fs.writeFile('gate2024.json', JSON.stringify(questionsData, null, 2), (err) => {
-            if (err) throw err;
-            //console.log('The file has been saved!');
         });
         // Now you have the extracted question details in `questionsData`
         // You can use this data to calculate the score
