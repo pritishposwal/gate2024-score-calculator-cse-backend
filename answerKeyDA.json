@@ -107,7 +107,7 @@
     {
       "questionId": "6420085116",
       "type": "MCQ",
-      "correctAnswer": ["d"]
+      "correctAnswer": ["c"]
     },
     {
       "questionId": "6420085119",
@@ -217,7 +217,7 @@
     {
       "questionId": "6420085157",
       "type": "NAT",
-      "correctAnswer": "0.062"
+      "correctAnswer": [0.062,0.063]
     },
     {
       "questionId": "6420085129",
@@ -237,7 +237,7 @@
     {
       "questionId": "6420085154",
       "type": "NAT",
-      "correctAnswer": "0.12"
+      "correctAnswer": [0.12,0.13]
     },
     {
       "questionId": "6420085128",

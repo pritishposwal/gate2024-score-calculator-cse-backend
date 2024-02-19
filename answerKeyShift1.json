@@ -77,7 +77,7 @@
     {
       "questionId": "6420084924",
       "type": "MSQ",
-      "correctAnswer": ["b","d"]
+      "correctAnswer": ["b","c"]
     },
     {
       "questionId": "6420084928",
@@ -292,7 +292,7 @@
     {
       "questionId": "6420084934",
       "type": "MCQ",
-      "correctAnswer": ["d"]
+      "correctAnswer": ["a"]
     },
     {
       "questionId": "6420084936",
@@ -317,7 +317,7 @@
     {
       "questionId": "6420084960",
       "type": "NAT",
-      "correctAnswer": "0.375"
+      "correctAnswer": [0.370,0.380]
     },
     {
       "questionId": "6420084948",
