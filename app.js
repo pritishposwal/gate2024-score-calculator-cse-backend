@@ -22,7 +22,10 @@ function calculateScore(questionsData,examType) {
     let coreScore = { positive: 0, negative: 0, attempted: 0, correct: 0, incorrect: 0, total: 0 };
     let detailedResults = [];
     aptitudeOneMarkIDs = [];
-    aptitudeTwoMarkIDs = []
+    aptitudeTwoMarkIDs = [];
+    let bonusQuestionId = "6420085151"; // ID of the bonus question
+    let bonusMarks = 2; // Full marks for the bonus question
+    let isBonusApplicable = examType === "DA"; // Bonus marks apply only to DA exam
     // Define aptitude question ID ranges for 1 and 2 mark questions depending on the exam type
     if (examType === "CSE1"){
         aptitudeOneMarkIDs = ["6420084898", "6420084899", "6420084900", "6420084901", "6420084902"];
@@ -64,8 +67,12 @@ function calculateScore(questionsData,examType) {
         }
         let negativescorereturn = -1*negativeMark;
         let correct = false; // Flag to indicate if the answer was correct
-
-        if (question.questionType === "MCQ") {
+        if (isBonusApplicable && question.questionId === bonusQuestionId) {
+            statusque = "Correct";
+            marksObtained = bonusMarks;
+            correct = true; // Mark as correct for scoring purposes
+            detailedResults.push({ questionNo, statusque, marksObtained });
+        } else if (question.questionType === "MCQ") {
             //check if our response is empty then do nothing and add it to unattempted
             if (question.optionImageIds.length === 0) {
                 statusque = "Unattempted";
